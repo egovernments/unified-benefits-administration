@@ -25,7 +25,7 @@ module.exports = {
   app: {
     port: parseInt(process.env.APP_PORT) || 8080,
     host: HOST,
-    contextPath: process.env.CONTEXT_PATH || "/ubp-bff-service",
+    contextPath: process.env.CONTEXT_PATH || "/uba-bff-service",
   },
   host: {
     mdms: process.env.EGOV_MDMS_HOST || 'http://localhost:8083',
@@ -47,8 +47,11 @@ module.exports = {
     mdms_get: "/egov-mdms-service/v1/_get",
     disbursal_search: "/disbursal/v1/_search",
     bankaccount_search: "/bankaccount-service/bankaccount/v1/_search",
+    bankaccount_create: "/bankaccount-service/bankaccount/v1/_create",
     localization_search: "/localization/messages/v1/_search",
     application_search: "/application/v1/_search",
-    individual_search: "/individual/v1/_search"
+    application_create: "/application/v1/_create",
+    individual_search: "/individual/v1/_search",
+    individual_create: "/individual/v1/_create"
   }
 };
